@@ -21,10 +21,10 @@ pip install opencv-python h5py pandas yt-dlp tqdm
 
 ### 1. **Video Annotation**
 
-You can annotate videos by running the `annotator.py` script. The script allows you to annotate video shots and apply manual summaries. The annotations are stored in both HDF5 and Excel formats.
+You can annotate videos by running the `aggregator.py` script. The script allows you to annotate video shots and apply manual summaries. The annotations are stored in both HDF5 and Excel formats.
 
 ```bash
-python annotator.py --input_dir <input_directory> --output_dir <output_directory> --sample_rate <sample_rate>
+python aggregator.py --input_dir <input_directory> --output_dir <output_directory> --sample_rate <sample_rate>
 ```
 
 - `input_dir`: Path to the directory containing your video files.
@@ -33,13 +33,13 @@ python annotator.py --input_dir <input_directory> --output_dir <output_directory
 
 ### 2. **HDF5 Visualization**
 
-To visualize and check the contents of an HDF5 file, you can use the `visualize_hdf5.py` script. This allows you to view the annotations and summaries stored in the HDF5 file.
+To visualize and check the contents of an HDF5 file, you can use the `data_visualization.py` script. This allows you to view the annotations and summaries stored in the HDF5 file.
 
 ```bash
-python data_visualization.py <path_to_hdf5_file>
+python data_visualization.py <path_to_h5_file>
 ```
 
-- `path_to_hdf5_file`: Path to the HDF5 file you wish to visualize.
+- `path_to_h5_file`: Path to the HDF5 file you wish to visualize.
 
 ### 3. **Video Downloading**
 
